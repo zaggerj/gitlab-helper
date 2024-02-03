@@ -6,10 +6,12 @@ const readline = require('readline')
 
 const { Gitlab } = require('gitlab')
 
+const { token } = require('./config.json')
+
 // 设置GitLab实例
 const gitlab = new Gitlab({
   host: 'http://172.16.203.254/', // 替换为你的GitLab实例的URL
-  token: 'AfY81VHd8s_zNJa9YbMP' // 替换为你的GitLab访问令牌
+  token// 替换为你的GitLab访问令牌
 })
 
 
@@ -307,6 +309,7 @@ async function main() {
   console.log(subject)
   console.log(text)
 
+  // 实例化readline
   const rl = readline.createInterface({
     input: process.stdin,
     output: process.stdout
