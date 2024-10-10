@@ -45,7 +45,7 @@ const progressTick = ({ util, step = 3 } = {}) => {
   }, 100)
 }
 
-const projectArr = ['ngconsole', 'view-front', 'oe-uaa']
+const projectArr = ['console-fe', 'tspace-client','view-front', 'oe-uaa','electron-mmc']
 const seriousError = ['语法错误', '逻辑错误', '安全漏洞']
 const normalError = ['需求实现', '异常处理', '性能问题', '潜在问题', '多语言支持', '代码文字错误']
 const usualError = ['代码优化', '风格规范', '冗余代码', '缺少日志或注释', '建议', '拼写规范']
